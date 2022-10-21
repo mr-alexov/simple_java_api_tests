@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id "com.kncept.junit.reporter" version "2.1.0"
+}
+
+group 'github.com.mr.alexov'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation "io.rest-assured:rest-assured:4.4.0"
+    testImplementation "org.assertj:assertj-core:3.22.0"
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
