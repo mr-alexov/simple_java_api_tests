@@ -28,6 +28,6 @@ public class RegresInTests {
 
     @Test
     void testUnknownReturns404() {
-        given().get("/unknown/23").then().log().all().statusCode(404);
+        given().get("/unknown/23").then().log().all().statusCode(403);
     }
 }
