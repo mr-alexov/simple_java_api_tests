@@ -22,7 +22,7 @@ public class BogusTests {
     @Test
     @DisplayName("This 2+2 could be failed for demos")
     void failing2plus2() {
-        assertThat(2 + 2).isEqualTo(4);
+        assertThat(2 + 2).isEqualTo(4).withFailMessage("Expected fail 2+2=5 demo");
     }
 
 }
